@@ -1,0 +1,1412 @@
+ .header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: #f9f9f9;
+   border-bottom: 1px solid #ddd;
+ }
+
+ /* Logo Section */
+ .header-left-section {
+   display: flex;
+   align-items: center;
+ }
+
+ .header-left-img img {
+   max-height: 350px;
+   border-radius: 5px;
+ }
+
+ /* Right Section */
+ .header-right-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   /* Adjust the size ratio */
+   padding-left: 20px;
+ }
+
+ /* Custom Widget */
+ .custom-widget {
+   display: flex;
+   align-items: center;
+   max-width: 80%;
+   /* Restrict maximum width */
+   background-color: rgb(174, 242, 78);
+   padding: 15px;
+   border-radius: 8px;
+   margin: 0 auto;
+   /* Center widget horizontally */
+ }
+
+ /* Banner Image */
+ .banner-image {
+   max-width: 40%;
+   /* Reduce image size */
+   max-height: 200px;
+   margin-right: 20px;
+   border-radius: 8px;
+   object-fit: cover;
+ }
+
+ /* Banner Heading */
+ .banner-heading {
+   flex: 1;
+   /* Use remaining space for text */
+   display: flex;
+   flex-direction: column;
+   text-align: right;
+ }
+
+ /* Text Content */
+ .banner-content h2 {
+   font-size: 20px;
+   color: #333;
+   margin-bottom: 15px;
+   line-height: 1.5;
+ }
+
+ /* Button */
+ .get-access-button1 {
+   padding: 10px 25px;
+   background-color: #1901f3;
+   color: white;
+   border-radius: 30px;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: bold;
+   align-self: flex-end;
+   /* Align button to the right */
+   transition: background-color 0.3s, color 0.3s;
+ }
+
+ .get-access-button1:hover {
+   background-color: #7f1aeb;
+ }
+
+ .right-arrow1 {
+   font-size: 20px;
+   color: inherit;
+   margin-left: 5px;
+ }
+
+ /* navbar styling */
+ /* Main Navbar Styling */
+
+ .menu-item .sub-menu .sub-menu-item a {
+   text-decoration: none !important;
+   color: #0e1ce7;
+ }
+
+ .menu-item .sub-menu .sub-menu-item a:hover {
+   color: #2575FC;
+ }
+
+ .primary-navigation {
+   text-decoration: none;
+   background-color: #e9def7; 
+ }
+
+ .ul-menu-item {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .menu-item {
+   position: relative;
+   font-size: 16px;
+   text-align: center;
+   text-decoration: none;
+   padding: 14px 16px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+
+ .menu-item:hover {
+   background-color: #85c1ef;
+ }
+
+ /* Submenu Styling */
+ .menu-item .sub-menu {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   padding: 0;
+   margin: 0;
+   z-index: 1000;
+ }
+
+ .sub-menu-item {
+   list-style: none;
+   text-align: left;
+   padding: 10px 20px;
+   font-size: 14px;
+   text-decoration: none;
+   border-bottom: 1px solid #ddd;
+   transition: background-color 0.3s, color 0.3s;
+   background-color: #e9def7; 
+ }
+
+ .menu-item:hover .sub-menu {
+   display: block;
+ }
+
+ .sub-menu-item:hover {
+   background-color: #85c1ef;
+   color: white;
+ }
+
+ nav ul li a {
+   padding: 0.25em 1em;
+   text-decoration: none;
+   color: #0e1ce7;
+   display: block;
+ }
+
+ nav li ul a {
+   padding: 0.25em 1em;
+   text-decoration: none;
+   color: #0e1ce7;
+   display: block;
+ }
+
+ @media (max-width: 768px) {
+  
+   .header-container {
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .header-right-section {
+     justify-content: center;
+   }
+
+   .custom-widget {
+     max-width: 90%;
+     /* Adjust width for smaller screens */
+   }
+
+   .banner-image {
+     max-width: 70%;
+     /* Scale image for smaller screens */
+     margin: 0 auto;
+   }
+
+   .banner-heading {
+     text-align: center;
+   }
+
+   .get-access-button1 {
+     margin: 10px auto 0 auto;
+   }
+   .memecoinimage {
+    margin-left: 10px; 
+  }
+ }
+
+ .gainers-losers-buttons-containe {
+   padding: 20px 20px;
+ }
+
+ .gainers-losers-buttons {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ .gainers-losers-buttons button {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   color: #333;
+   font-weight: bold;
+   font-size: 16px;
+   padding: 10px 12px;
+   margin-right: 20px;
+   border-bottom: 2px solid transparent;
+ }
+
+ .gainers-losers-buttons button.active {
+   border-bottom: 2px solid #2196F3;
+ }
+
+ .top-gainers-table1h {
+   display: block;
+ }
+
+ .dropdown-container {
+   display: flex;
+   justify-content: flex-end;
+   margin: 5px;
+   margin-right: 10px;
+ }
+
+ .dropdown {
+
+   width: 30%;
+ }
+
+ #portfolioSelect {
+   margin-left: 10px;
+   border: 2px solid #1877F2;
+   border-radius: 15px;
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 600;
+   color: #1877F2;
+   width: 90%;
+   text-align: center;
+   text-align-last: center;
+   background-color: #ffffff;
+ }
+
+ .btn {
+   cursor: default;
+   text-align: center;
+   color: #727376;
+   font-size: 18px;
+   background: white;
+   padding: 12px;
+   margin: 0;
+   margin-bottom: 5px;
+   box-shadow: 0px 4px 10px 0.5px rgba(45, 54, 67, 0.20);
+   width: 100%;
+   border: none;
+ }
+ .btn1{
+  text-align: center;
+   color: white;
+   font-size: 18px;
+   background: white;
+   padding: 12px;
+   margin: 0;
+   margin-bottom: 5px;
+   box-shadow: 0px 4px 10px 0.5px rgba(45, 54, 67, 0.20);
+   width: 100%;
+   border: none;
+ }
+
+
+
+ .tablerowcol {
+   text-align: center;
+   border: 1px solid #DADEDF;
+   padding: 8px 10px;
+   border-top: none;
+ }
+
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   padding: 0;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ .desktop-view {
+   margin: 20px 10px;
+ }
+
+ tr {
+   padding: 0;
+ }
+
+ th {
+   border: 0;
+   padding: 0;
+   width: 20%;
+ }
+ td {
+  text-align: center;
+  border: 1px solid #DADEDF;
+  padding: 8px 10px;
+  border-top: none;
+  color: #1877F2;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+ }
+.memecoinimage{
+  padding:20px 10px;
+  width:80%;
+  margin:0 auto;
+  display:block;
+}
+#chartsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 20px;
+  background-color: #e9def7; 
+  overflow: hidden;
+  width: 80%;
+  margin: 20px auto;
+}
+.dropdown-container1 {
+  display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    margin-right: 10px;
+}
+.dropdown1 .dropdown0{
+  margin-bottom: 10px;
+  margin-top: 15px;
+  width: 30%;
+
+}
+
+#portfolioSelect1, #portfolioSelect2 {
+  margin-left: 10px;
+  border: 2px solid #1877F2;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1877F2;
+  background-color: #ffffff;
+}
+
+#portfolioSelect1, #portfolioSelect2 option {
+  text-align: center;
+}
+
+
+.footer {
+  color: #fff;
+  background-color: #1571c1;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1170px;
+  width: 100%;
+}
+
+/* Left Column: Copyright Section */
+.copyright_section {
+  flex: 0 0 50%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Right Column: Navigation Links */
+.footer_nav {
+  flex: 0 0 50%;
+  text-align: right;
+ 
+}
+
+.footer_nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto; 
+  gap: 20px 40px; 
+  justify-content: center;
+}
+
+.footer_nav ul li:nth-child(4) {
+  grid-column: 2;
+}
+
+.footer_nav ul li:nth-child(5) {
+  grid-column: 3; 
+}
+
+
+.footer_nav ul li:nth-child(4) {
+  grid-column: 2;
+}
+
+.footer_nav ul li:nth-child(5) {
+  grid-column: 3; 
+}
+
+.footer_nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+.footer_nav ul li a:hover {
+  color: #f1f1f1;
+}
+
+.custombutton-container {
+  display: flex;
+  justify-content: center; 
+  padding: 20px;
+  margin:20px 15px;
+  gap: 20px;
+}
+
+
+.custom-button {
+  display: inline-block;
+  padding: 20px 35px;
+  background:linear-gradient(90deg, #1877F2 0%, #519DFF 100%); 
+ 
+  color: white; /* Text color */
+  border: none;
+  border-radius: 10px; /* Slight rounded corners */
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  width:390px;
+  height:120px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button:hover {
+  transform: translateY(-5px); /* Raise the button */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background: #9b6aea;
+ }
+
+ @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .header-left-section {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .header-left-img img {
+    max-height: 250px;
+    width: auto;
+  }
+
+  .header-right-section {
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 20px;
+    flex: none;
+    width: 100%;
+  }
+  .custom-widget {
+    flex-direction: column;
+    max-width: 100%;
+    background-color: rgb(174, 242, 78);
+    padding: 20px;
+    margin: 0;
+  }
+  .banner-image {
+    max-width: 100%;
+    max-height: 180px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  .banner-heading {
+    text-align: center;
+    flex: none;
+    margin-top: 15px;
+  }
+  .banner-content h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  .get-access-button1 {
+    align-self: center;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .right-arrow1 {
+    font-size: 18px;
+  }
+  .ul-menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .menu-item {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .menu-item:hover {
+    background-color: #85c1ef;
+  }
+  .menu-item .sub-menu {
+    position: absolute;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .menu-item:hover .sub-menu {
+    display: block;
+  }
+
+  .sub-menu-item {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .sub-menu-item:hover {
+    background-color: #85c1ef;
+    color: white;
+  }
+
+  .primary-navigation {
+    background-color: #e9def7;
+  }
+  .gainers-losers-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .gainers-losers-buttons-container {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .gainers-losers-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 5px;
+    margin-right: 5px;
+    border-bottom: 2px solid transparent;
+  }
+  .dropdown-container {
+    justify-content: flex-start;
+    margin: 10px;
+  }
+
+  .dropdown {
+    width: 50%; 
+  }
+
+  #portfolioSelect {
+    font-size: 16px; 
+    padding: 8px;
+  }
+  .desktop-view {
+    margin: 15px 5px;
+  }
+
+  .btn, .btn1 {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  th {
+    width: 16%;
+  }
+
+  td {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  .dropdown-container1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+  }
+
+  .dropdown1 .dropdown0 {
+    width: 45%;
+  }
+
+  #portfolioSelect1, #portfolioSelect2 {
+    width: 100%;
+    font-size: 16px; 
+    padding: 8px; 
+  }
+  table {
+    width: 100%;
+  }
+
+  .desktop-view {
+    margin: 15px 5px;
+  }
+
+  th {
+    width: 18%; 
+  }
+
+  td {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .container {
+    width: 95%;
+  }
+
+  #chartsContainer {
+    width: 90%; 
+    margin: 15px auto;
+  }
+
+  .memecoinimage {
+    width: 90%;
+    padding: 10px 5px;
+  }
+  .custom-button {
+    width: 300px;
+    height: 100px;
+    font-size: 14px;
+  }
+  .custombutton-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer_inner {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+  }
+
+  .copyright_section,
+  .footer_nav {
+    flex: 0 0 100%; 
+  }
+
+  .footer_nav ul {
+    grid-template-columns: repeat(2, auto); 
+    gap: 15px 30px; 
+  }
+}
+
+/* Media Query for 600px */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .header-left-section {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .header-left-img img {
+    max-height: 200px;
+    width: auto;
+  }
+  .header-right-section {
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 15px;
+    flex: none;
+    width: 100%;
+  }
+  .custom-widget {
+    flex-direction: column;
+    max-width: 100%;
+    background-color: rgb(174, 242, 78);
+    padding: 15px;
+    margin: 0;
+  }
+
+  .banner-image {
+    max-width: 100%;
+    max-height: 160px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  .banner-heading {
+    text-align: center;
+    flex: none;
+    margin-top: 10px;
+  }
+
+  .banner-content h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .get-access-button1 {
+    align-self: center;
+    font-size: 12px;
+    padding: 6px 18px;
+  }
+
+  .right-arrow1 {
+    font-size: 16px;
+  }
+  .ul-menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .menu-item {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .menu-item:hover {
+    background-color: #85c1ef;
+  }
+  .menu-item .sub-menu {
+    position: absolute;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .menu-item:hover .sub-menu {
+    display: block;
+  }
+
+  .sub-menu-item {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  .sub-menu-item:hover {
+    background-color: #85c1ef;
+    color: white;
+  }
+
+  .primary-navigation {
+    background-color: #e9def7;
+  }
+  .gainers-losers-buttons {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .gainers-losers-buttons-container {
+    justify-content: center;
+  }
+
+  .gainers-losers-buttons button {
+    font-size: 14px;
+    padding: 4px 4px;
+    margin-right: 4px;
+    border-bottom: 2px solid transparent;
+  }
+  .dropdown-container {
+    justify-content: center;
+    margin: 8px;
+  }
+
+  .dropdown {
+    width: 60%; 
+  }
+
+  #portfolioSelect {
+    font-size: 14px; 
+    padding: 6px;
+  }
+  .desktop-view {
+    margin: 10px 5px;
+  }
+
+  .btn, .btn1 {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  th {
+    width: 25%;
+  }
+
+  td {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .dropdown-container1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 8px 5px;
+  }
+
+  .dropdown1 .dropdown0 {
+    width: 100%; 
+    margin-bottom: 12px;
+  }
+
+  #portfolioSelect1, #portfolioSelect2 {
+    width: 100%; 
+    font-size: 14px; 
+    padding: 6px;
+  }
+  table {
+    width: 100%;
+  }
+
+  .desktop-view {
+    margin: 10px 3px;
+  }
+
+  th {
+    width: 16%; 
+  }
+
+  td {
+    font-size: 12px; 
+    padding: 4px 6px;
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  th {
+    display: none; 
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  #chartsContainer {
+    width: 95%; 
+    margin: 10px auto;
+  }
+
+  .memecoinimage {
+    width: 100%; 
+    padding: 5px 0;
+  }
+  .custom-button {
+    width: 250px;
+    height: 90px;
+    font-size: 13px;
+  }
+  .footer_nav ul {
+    grid-template-columns: repeat(1, auto); 
+    gap: 10px; 
+  }
+
+  .footer_nav ul li {
+    text-align: center;
+  }
+}
+
+/* Media Query for 400px */
+@media (max-width: 400px) {
+  .header-container {
+    flex-direction: column;
+    padding: 8px;
+  }
+  .header-left-section {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .header-left-img img {
+    max-height: 150px;
+    width: auto;
+  }
+  .header-right-section {
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 10px;
+    flex: none;
+    width: 100%;
+  }
+  .custom-widget {
+    flex-direction: column;
+    max-width: 100%;
+    background-color: rgb(174, 242, 78);
+    padding: 10px;
+    margin: 0;
+  }
+  .banner-image {
+    max-width: 100%;
+    max-height: 140px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  .banner-heading {
+    text-align: center;
+    flex: none;
+    margin-top: 10px;
+  }
+
+  .banner-content h2 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .get-access-button1 {
+    align-self: center;
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+
+  .right-arrow1 {
+    font-size: 14px;
+  }
+  .ul-menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .menu-item {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .menu-item:hover {
+    background-color: #85c1ef;
+  }
+
+  /* Submenu Styling */
+  .menu-item .sub-menu {
+    position: absolute;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .menu-item:hover .sub-menu {
+    display: block;
+  }
+
+  .sub-menu-item {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+
+  .sub-menu-item:hover {
+    background-color: #85c1ef;
+    color: white;
+  }
+
+  .primary-navigation {
+    background-color: #e9def7;
+  }
+  .gainers-losers-buttons {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .gainers-losers-buttons-container {
+    justify-content: center;
+  }
+
+  .gainers-losers-buttons button {
+    font-size: 12px;
+    padding: 4px 3px;
+    margin-right: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  .dropdown-container {
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .dropdown {
+    width: 80%; 
+  }
+
+  #portfolioSelect {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .desktop-view {
+    margin: 8px 5px;
+  }
+
+  .btn, .btn1 {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  th {
+    width: 30%; 
+  }
+
+  td {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .dropdown-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 6px 5px;
+  }
+
+  .dropdown1 .dropdown0 {
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+
+  #portfolioSelect1, #portfolioSelect2 {
+    width: 100%;
+    font-size: 12px; 
+    padding: 5px;
+  }
+  table {
+    width: 100%;
+  }
+
+  .desktop-view {
+    margin: 8px 2px;
+  }
+
+  th {
+    width: 15%; 
+  }
+
+  td {
+    font-size: 10px; 
+    padding: 3px 5px;
+  }
+
+  .btn {
+    font-size: 8px;
+    padding: 4px 8px;
+  }
+
+  td {
+    display: block;
+    padding: 8px;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 12px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  #chartsContainer {
+    width: 100%; 
+    margin: 5px auto;
+  }
+
+  .memecoinimage {
+    width: 100%; 
+    padding: 5px 0;
+  }
+  .custom-button {
+    width: 200px;
+    height: 80px;
+    font-size: 12px;
+    padding: 15px 20px;
+  }
+  .footer_nav ul {
+    grid-template-columns: 1fr; 
+    gap: 8px; 
+  }
+
+  .footer_nav ul li a {
+    font-size: 14px; 
+  }
+
+  .copyright_section {
+    font-size: 14px;
+  }
+}
+
+/* Media Query for 300px */
+@media (max-width: 300px) {
+  .header-container {
+    flex-direction: column;
+    padding: 6px;
+  }
+  .header-left-section {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .header-left-img img {
+    max-height: 120px;
+    width: auto;
+  }
+  .header-right-section {
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 5px;
+    flex: none;
+    width: 100%;
+  }
+  .custom-widget {
+    flex-direction: column;
+    max-width: 100%;
+    background-color: rgb(174, 242, 78);
+    padding: 8px;
+    margin: 0;
+  }
+  .banner-image {
+    max-width: 100%;
+    max-height: 120px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    object-fit: cover;
+  }
+  .banner-heading {
+    text-align: center;
+    flex: none;
+    margin-top: 5px;
+  }
+  .banner-content h2 {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
+  .get-access-button1 {
+    align-self: center;
+    font-size: 8px;
+    padding: 4px 12px;
+  }
+
+  .right-arrow1 {
+    font-size: 12px;
+  }
+  .ul-menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .menu-item {
+    font-size: 8px;
+    padding: 5px 8px;
+  }
+
+  .menu-item:hover {
+    background-color: #85c1ef;
+  }
+
+  /* Submenu Styling */
+  .menu-item .sub-menu {
+    position: absolute;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .menu-item:hover .sub-menu {
+    display: block;
+  }
+
+  .sub-menu-item {
+    font-size: 6px;
+    padding: 4px 8px;
+  }
+
+  .sub-menu-item:hover {
+    background-color: #85c1ef;
+    color: white;
+  }
+
+  .primary-navigation {
+    background-color: #e9def7;
+  }
+  .gainers-losers-buttons {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .gainers-losers-buttons-container {
+    justify-content: center;
+  }
+
+  .gainers-losers-buttons button {
+    font-size: 10px;
+    padding: 3px 2px;
+    margin-right: 2px;
+    border-bottom: 2px solid transparent;
+  }
+  .dropdown-container {
+    justify-content: center;
+    margin: 3px;
+  }
+
+  .dropdown {
+    width: 90%; 
+  }
+
+  #portfolioSelect {
+    font-size: 10px;
+    padding: 3px;
+  }
+  .desktop-view {
+    margin: 6px 2px;
+  }
+
+  .btn, .btn1 {
+    font-size: 10px;
+    padding: 4px;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  th {
+    width: 35%; 
+  }
+
+  td {
+    font-size: 8px;
+    padding: 4px;
+  }
+  .dropdown-container1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 4px 2px;
+  }
+
+  .dropdown1 .dropdown0 {
+    width: 100%; 
+    margin-bottom: 8px;
+  }
+
+  #portfolioSelect1, #portfolioSelect2 {
+    width: 100%; 
+    font-size: 10px;
+    padding: 4px; 
+  }
+  table {
+    width: 100%;
+  }
+
+  .desktop-view {
+    margin: 5px 1px;
+  }
+
+  th {
+    width: 14%; /* Further reduce width */
+  }
+
+  td {
+    font-size: 8px; /* Smallest font size */
+    padding: 2px 4px;
+  }
+
+  .btn {
+    font-size: 6px;
+    padding: 3px 6px;
+  }
+
+  td {
+    display: block;
+    padding: 6px;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  #chartsContainer {
+    width: 100%; 
+    margin: 5px auto;
+  }
+
+  .memecoinimage {
+    width: 100%; 
+    padding: 5px 0;
+  }
+  .custom-button {
+    width: 180px;
+    height: 70px;
+    font-size: 11px;
+    padding: 10px 15px;
+  }
+  .footer_nav ul {
+    gap: 5px; 
+  }
+
+  .footer_nav ul li a {
+    font-size: 12px; 
+  }
+
+  .copyright_section {
+    font-size: 12px; 
+  }
+
+}
